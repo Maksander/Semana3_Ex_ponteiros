@@ -13,7 +13,7 @@ char* Primo(int* n){
 	*p_maxI = sqrt(*n)+2;
 	//printf("%d",*p_maxI);
 	for(*p_i=5; *p_i < *p_maxI; (*p_i)+=6){
-		if(*n%i==0||*n%(i+2)==0) *p_resultado=0;
+		if(*n%(*p_i)==0||*n%((*p_i)+2)==0) *p_resultado=0;
 	}
 	if(*p_resultado==1)return "Primo";
 	else return "Nao Primo";
